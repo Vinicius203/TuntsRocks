@@ -36,4 +36,4 @@
   are NOT empty. If you delete these values, also delete the column names in the DataFrame created in the main function. After the first successful run, please place the column
   names again.</p>
 
-<p>Author: [Vinicius Martins Freire](github.com/Vinicius203)</p>
+Author: [Vinícius Martins Freire](github.com/Vinicius203)
