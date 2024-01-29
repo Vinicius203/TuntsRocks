@@ -1,4 +1,3 @@
-import os.path
 import pandas as pd
 import math
 from googleapiclient.discovery import build
@@ -38,6 +37,7 @@ def calculate_situation_and_update_sheet(df):
         average = (float(row["P1"]) + float(row["P2"]) + float(row["P3"])) / 3
 
         situation = ""
+        # Naf stands for "Nota para Aprovação Final = Grade to Final Approval"
         naf = 0
 
         # Check absences percentage (> 25% = Reproved)
@@ -87,6 +87,7 @@ def main():
     creds = authenticate_spreadsheet()
 
     if creds:
+        # Spreadsheet ID
         SAMPLE_SPREADSHEET_ID = "1tSh199BesukXZ8cbrwsFFsRCiAX77g8RGTtUqd-wcJE"
         SPREADSHEET_RANGE = "engenharia_de_software!A4:H27"
 
